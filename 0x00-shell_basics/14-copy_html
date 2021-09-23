@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -n *.html ~/holberton-system_engineering-devops/
+cp -n *.html holberton-system_engineering-devops
