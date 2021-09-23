@@ -1,2 +1,2 @@
 #!/bin/bash
-rm -i [!a-zA-Z]*[~]
+rm *~
