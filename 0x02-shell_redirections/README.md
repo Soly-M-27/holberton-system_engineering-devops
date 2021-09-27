@@ -7,6 +7,5 @@ Redirections
 6. Display first 10 lines on a file: head -n 10 file
 7. Create a file with special symbols and write "Best School inside it:
 8. Write a script that writes the contents of ls -la: ls -la > file
-9. Write a script that duplicates the last line of the file iacta: 
-10.
-10.
+9. Write a script that duplicates the last line of the file iacta: tail -n 1 samefile >> samefile
+10. Script that deletes all regulat files with a .js extension present in cd:
