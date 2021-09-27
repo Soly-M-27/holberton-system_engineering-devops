@@ -5,3 +5,8 @@ Redirections
 4. Display 2 files at once: cat file1 file2
 5. Display last 11 lines on file: tail -n 11 file
 6. Display first 10 lines on a file: head -n 10 file
+7. Create a file with special symbols and write "Best School inside it:
+8. Write a script that writes the contents of ls -la: ls -la > file
+9. Write a script that duplicates the last line of the file iacta: 
+10.
+10.
