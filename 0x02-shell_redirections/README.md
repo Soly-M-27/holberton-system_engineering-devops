@@ -9,3 +9,14 @@ Redirections
 8. Write a script that writes the contents of ls -la: ls -la > file
 9. Write a script that duplicates the last line of the file iacta: tail -n 1 samefile >> samefile
 10. Script that deletes all regulat files with a .js extension present in cd:
+11. Count the number of directories and subdirectories: find . -mindepth type -d | wc -l
+12. Displays the 10 newest files in the cd: ls -1t | head -10
+13.
+14.
+15.
+16.
+17.
+18.
+19.
+20.
+21.
