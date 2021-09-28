@@ -1,2 +1,2 @@
 #!/bin/bash
-bc <<< "BINARY=2;10"
+echo $((10#BINARY))
