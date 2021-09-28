@@ -12,8 +12,8 @@ Redirections
 11. Count the number of directories and subdirectories: find . -mindepth type -d | wc -l
 12. Displays the 10 newest files in the cd: ls -1t | head -10
 13. Displays Unique lines: sort | uniq -u
-14.
-15.
+14. Display lines containg the pattern "root" in the file: grep root file
+15. Display the number of lines that contain the pattern "bin" in file: grep -c file
 16.
 17.
 18.
