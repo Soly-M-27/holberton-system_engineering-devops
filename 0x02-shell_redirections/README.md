@@ -5,7 +5,7 @@ Redirections
 4. Display 2 files at once: cat file1 file2
 5. Display last 11 lines on file: tail -n 11 file
 6. Display first 10 lines on a file: head -n 10 file
-7. Create a file with special symbols and write "Best School inside it:
+7. Create a file with special symbols and write "Best School" inside it: echo 'Best School' > "\*\\\\'\"Best School\"\\'\\\\*$\\?\\*\\*\\*\\*\\*:)" [some of the \\ are as ||. All || are actually\\, vim reformats it when a \\ is confronted by a * * encasing, hence if \\ goes inside of the encasement of * * it will do this *\\*.]
 8. Write a script that writes the contents of ls -la: ls -la > file
 9. Write a script that duplicates the last line of the file iacta: tail -n 1 samefile >> samefile
 10. Script that deletes all regulat files with a .js extension present in cd:
@@ -20,4 +20,4 @@ Redirections
 19. Replace all characters A and c from input to Z and e respectively: tr Ac Ze
 20. Remove all letters c and C from input: tr -d Cc
 21. Reverse its input: rev
-22. Display all users and their home directories, sorted by users: 
+22. Display all users and their home directories, sorted by users: cut -d: -f1,6 /etc/passwd | sort -k1
