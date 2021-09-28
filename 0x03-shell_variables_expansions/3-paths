@@ -1,2 +1,2 @@
 #!/bin/bash
-find $PATH | grep -c ^d
+echo $PATH | grep -c ^d
