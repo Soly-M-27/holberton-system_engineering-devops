@@ -11,7 +11,7 @@ Redirections
 10. Script that deletes all regulat files with a .js extension present in cd:
 11. Count the number of directories and subdirectories: find . -mindepth type -d | wc -l
 12. Displays the 10 newest files in the cd: ls -1t | head -10
-13.
+13. Displays Unique lines: sort | uniq -u
 14.
 15.
 16.
