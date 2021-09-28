@@ -1,2 +1,2 @@
 #!/bin/bash
-export PATH="$HOME/action:$PATH"
+nano ~/.bashrc | export PATH="$HOME/action:$PATH" | sorce ~/.bashrc
