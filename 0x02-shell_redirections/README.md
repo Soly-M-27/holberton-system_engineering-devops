@@ -14,9 +14,10 @@ Redirections
 13. Displays Unique lines: sort | uniq -u
 14. Display lines containg the pattern "root" in the file: grep root file
 15. Display the number of lines that contain the pattern "bin" in file: grep -c file
-16.
-17.
-18.
-19.
-20.
-21.
+16. Display lines containing the pattern "root" and 3 lines after them in file: grep root -A3 file
+17. Display all the lines in the file that do not contain pattern "bin": grep -v bin file
+18. Display all lines of the file starting with a letter: 
+19. Replace all characters A and c from input to Z and e respectively: tr Ac Ze
+20. Remove all letters c and C from input: tr -d Cc
+21. Reverse its input: rev
+22. Display all users and their home directories, sorted by users: 
