@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# FizzBuzz
+for ((x=1; x<=100; x++))
+do
+    if ! ((x%15))
+	then
+        echo "FizzBuzz"
+    elif ! ((x%3))
+	then
+        echo "Fizz"
+    elif ! ((x%5))
+	then
+        echo "Buzz"
+    else
+        echo $x
+    fi
+done
