@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Infinite loop with sigterm trap
+x=0
+trap 'echo "I am invincible!!!"' SIGTERM
+while [ $x -le 1 ]
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
