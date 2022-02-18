@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Display To Infiniy and Beyond 10 times with sleep in between
+for ((x=0 ; x < 10 ; x++)); do
+	echo "To infinity and beyond"
+	sleep 2
+done
