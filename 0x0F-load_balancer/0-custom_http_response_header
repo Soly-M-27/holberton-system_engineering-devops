@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # Configure new web-02 identical to web-01 and ass costume HTTP response
-# in Nginx
 
 sudo apt-get update
 sudo apt-get upgrade -y
