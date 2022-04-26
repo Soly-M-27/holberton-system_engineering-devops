@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Configure new web-02 identical to web-01 and ass costume HTTP response
+# in Nginx
+
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get install nginx -y
+sudo ufw allow 'nginx http'
+sudo sed -i '24 i add_header X-Served-By $hostname;' /etc/nginx/sites-available/default
+sudo service nginx restart
