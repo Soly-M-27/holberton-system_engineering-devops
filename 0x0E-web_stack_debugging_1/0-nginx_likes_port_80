@@ -4,5 +4,5 @@
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get install nginx -y
-sudo sed -i '22 i listen 80 default_server' /etc/nginx/sites-enabled/default
+sudo sed -i '24 i listen 80 default_server' /etc/nginx/sites-enabled/default
 sudo service nginx restart
