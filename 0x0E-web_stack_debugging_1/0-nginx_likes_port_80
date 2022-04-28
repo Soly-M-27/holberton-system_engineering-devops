@@ -3,6 +3,7 @@
 
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo sed -i '24 i listen 80 default_server' /etc/nginx/sites-enabled/default
-sudo sed -i '24 i listen 80 default_server' /etc/nginx/sites-available/default
+sudo apt-get install nginx -y
+sudo rm /etc/nginx/sites-enabled/default
+sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 sudo service nginx restart
