@@ -7,12 +7,12 @@ output() {
 	printf "The subdomain %s is a %s record and points to %s\n", sdom, $4, $5}' sdom="$2"
 }
 
-if [[ $# -gt 2 ]];
+if [[ $# -gt 1 ]];
 then
+	output "$1" "$2"
+else
 	output "$1" "www"
 	output "$1" "lb-01"
 	output "$1" "web-01"
 	output "$1" "web-02"
-else
-	output "$1" "$2"
 fi
