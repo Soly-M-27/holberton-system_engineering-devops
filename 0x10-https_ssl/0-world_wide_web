@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Configure your domain zone so that the subdomain
-# www points to your load-balancer IP
+# www points to your load-balancer IP.
 
 output() {
 	dig "$2.$1" | awk '/;; ANSWER SECTION/ {getline;
