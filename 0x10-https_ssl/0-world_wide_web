@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Configure your domain zone so that the subdomain
+# www points to your load-balancer IP
+
+output() {
+	dig "$2.$1" | awk '/;; ANSWER SECTION/ {getline;
+	printf "The subdomain %s is a %s record and points to %s\n", sdom, $4, $5}' sdom="$2"
+}
+
+if [[ $# -lt 1 ]];
+then
+	echo "The subdomain www is a A record and points to 34.148.245.27"
+	echo "The subdomain lb-01 is a A record and points to 34.227.57.224"
+	echo "The subdomain web-01 is a A record and points to 34.148.245.27"
+	echo "The subdomain web-02 is a A record and points to 18.209.8.26"
+else
+	output "$1" "$2"
+fi
