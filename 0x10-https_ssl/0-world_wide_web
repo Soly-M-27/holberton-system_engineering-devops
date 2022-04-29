@@ -9,10 +9,10 @@ output() {
 
 if [[ $# -lt 2 ]];
 then
-	echo "The subdomain www is a A record and points to 34.148.245.27"
-	echo "The subdomain lb-01 is a A record and points to 34.227.57.224"
-	echo "The subdomain web-01 is a A record and points to 34.148.245.27"
-	echo "The subdomain web-02 is a A record and points to 18.209.8.26"
+	output "$1" "www"
+	output "$1" "lb-01"
+	output "$1" "web-01"
+	output "$1" "web-02"
 else
 	output "$1" "$2"
 fi
