@@ -7,7 +7,7 @@ outpt() {
 	printf "The subdomain %s is a %s record and points to %s\n", sdom, $4, $5}' sdom="$2"
 }
 
-if [[ $# -gt 1 ]]
+if [ $# -gt 1 ]
 then
 	outpt "$1" "$2"
 else
