@@ -7,7 +7,7 @@ output() {
 	printf "The subdomain %s is a %s record and points to %s\n", sdom, $4, $5}' sdom="$2"
 }
 
-if [[ $# -lt 1 ]];
+if [[ $# -lt 2 ]];
 then
 	echo "The subdomain www is a A record and points to 34.148.245.27"
 	echo "The subdomain lb-01 is a A record and points to 34.227.57.224"
