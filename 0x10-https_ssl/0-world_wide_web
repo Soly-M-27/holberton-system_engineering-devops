@@ -2,17 +2,17 @@
 # Configure your domain zone so that the subdomain
 # www points to your load-balancer IP.
 
-outpt() {
+output() {
 	dig "$2.$1" | awk '/;; ANSWER SECTION/ {getline;
 	printf "The subdomain %s is a %s record and points to %s\n", sdom, $4, $5}' sdom="$2"
 }
 
 if [ $# -gt 1 ]
 then
-	outpt "$1" "$2"
+	output "$1" "$2"
 else
-	outpt "$1" "www"
-	outpt "$1" "lb-01"
-	outpt "$1" "web-01"
-	outpt "$1" "web-02"
+	output "$1" "www"
+	output "$1" "lb-01"
+	output "$1" "web-01"
+	output "$1" "web-02"
 fi
