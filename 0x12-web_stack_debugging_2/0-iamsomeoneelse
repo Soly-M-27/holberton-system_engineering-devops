@@ -3,5 +3,5 @@
 
 if [[ $# -eq 1 ]]
 then
-	sudo echo $1
+	sudo echo "$1"
 fi
