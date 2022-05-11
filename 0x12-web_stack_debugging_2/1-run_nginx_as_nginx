@@ -3,4 +3,5 @@
 
 sudo sed -i "0 i user nginx;" /etc/nginx/nginx.conf
 sudo sed -i "24 i listen 8080;" /etc/nginx/sites-enable/default
+sudo -u nginx
 sudo service nginx restart
